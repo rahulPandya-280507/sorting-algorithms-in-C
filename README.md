@@ -12,4 +12,5 @@ run this in your terminal to compile the code:<br>
 This compiles the code<br>
 To run the code, enter the following command in your terminal:<br>
     <br>./main<br><br>
-That should be it. You're ready to Go!
+That should be it. You're ready to Go!<br>
+<br> PS: Make sure you use the gcc compiler and you've cloned this gitHub repo on your syatem
