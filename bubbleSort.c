@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void bubbleSort(int arr[], int size);
+int bubbleSort(int arr[], int size);
 void printArray(int arr[], int size);
 
 int main() {
@@ -21,15 +21,19 @@ int main() {
     return 0;
 }
 
-void bubbleSort(int arr[], int size) {
-    int temp;
+int bubbleSort(int arr[], int size) {
+    int temp, isSwap = 0;
     for(int i = 0; i < size - 1; i++) {
         for(int j = 0; j < size - i - 1; j++) {
             if(arr[j]>arr[j+1]) {
                 temp = arr[j+1];
                 arr[j+1] = arr[j];
                 arr[j] = temp;
+                isSwap = 1;
             }
+        }
+        if(isSwap) {
+            return 0;
         }
     }
 }
